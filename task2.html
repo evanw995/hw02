@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 2</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        #header {
+            color: blueviolet;
+            font-size: 10em;
+        }
+
+        #foot {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="header">10</h1>
+    <button type="button" onclick="addOne()">
+        Increment Number
+    </button>
+    <button type="button" onclick="window.alert(x)">
+        Display Value Alert
+    </button>
+    <button type="button" onclick="appendParagraph()">
+        Append Value Paragraph
+    </button>
+    <div id="foot"></div>
+    <script>
+        var x = 10;
+        document.getElementById('header').innerHTML = x;
+        function addOne() {
+            x += 1;
+            document.getElementById('header').innerHTML = x;
+        }
+        function appendParagraph() {
+            document.getElementById('foot')
+                .appendChild(document.createElement('p') // Create Paragraph
+                    .appendChild(document.createTextNode(x))) // Add x to paragraph
+            document.getElementById('foot')
+                .appendChild(document.createElement('br')) // Add newline
+        }
+    </script>
+</body>
+
+</html>

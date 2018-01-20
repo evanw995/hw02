@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Task 3</title>
+    <style>
+        html,
+        body {
+            background: radial-gradient(white 90%, gray 99%);
+            height: 100%;
+        }
+
+        #title {
+            font-size: 10em;
+            background: linear-gradient(0deg, white 1%, black 15%, black 85%, white 99%);
+            color: rgb(128, 0, 255);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            animation-duration: 2.5s;
+            animation-name: fade;
+        }
+
+        @keyframes fade {
+            from {
+                padding-right: 100px;
+                color: black;
+            }
+
+            to {
+                padding-right: 0px;
+                color: rgb(128, 0, 255);
+            }
+        }
+
+        #left {
+            float: left;
+            width: 33%;
+        }
+
+        #right {
+            float: right;
+            width: 66%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">HW02 Task Three</h1>
+    <div id="left">
+        <a onclick="document.getElementById('right').innerHTML = lorem" href="#">Lorem Ipsem</a>
+        <br/>
+        <a onclick="document.getElementById('right').innerHTML = bottles" href="#">99 Bottles</a>
+        <br/>
+        <a onclick="document.getElementById('right').innerHTML = thing" href="#">Last Thing</a>
+        <br/>
+    </div>
+    <div id="right"></div>
+    <script>
+        var lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
+     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
+     Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. \
+     Volutpat odio facilisis mauris sit amet massa vitae. Neque laoreet \
+     suspendisse interdum consectetur libero id. Accumsan sit amet nulla \
+     facilisi morbi tempus. Gravida arcu ac tortor dignissim convallis \
+     aenean. Sed sed risus pretium quam vulputate dignissim suspendisse. \
+     Urna nec tincidunt praesent semper feugiat nibh. Sit amet risus \
+     nullam eget. Non arcu risus quis varius quam quisque id. Sagittis id \
+     consectetur purus ut faucibus. Duis at tellus at urna condimentum \
+     mattis pellentesque id nibh. Id ornare arcu odio ut. Aliquam purus \
+     sit amet luctus venenatis lectus magna fringilla. A pellentesque sit \
+     amet porttitor eget dolor morbi non. Interdum consectetur libero id \
+     faucibus nisl tincidunt eget nullam non. \
+     Ac turpis egestas sed tempus urna et pharetra pharetra massa.\
+     Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.\
+     Mattis vulputate enim nulla aliquet.Interdum consectetur libero id \
+     faucibus.Sit amet luctus venenatis lectus magna fringilla urna \
+     porttitor rhoncus.Lectus quam id leo in vitae turpis.Nisl suscipit \
+     adipiscing bibendum est ultricies integer quis.Nec ullamcorper sit \
+     amet risus nullam eget felis eget.Praesent semper feugiat nibh sed \
+     pulvinar proin gravida hendrerit.Lacus laoreet non curabitur gravida a\
+     rcu ac tortor.Semper viverra nam libero justo.Interdum consectetur \
+     libero id faucibus nisl tincidunt eget.Id ornare arcu odio ut sem \
+     nulla pharetra.Odio eu feugiat pretium nibh.Vel elit scelerisque \
+     mauris pellentesque pulvinar pellentesque habitant morbi tristique.\
+     Aenean sed adipiscing diam donec adipiscing tristique risus.Nisi \
+     vitae suscipit tellus mauris a diam.Ut enim blandit volutpat maecenas \
+     volutpat blandit aliquam. \
+     Cras sed felis eget velit.Scelerisque in dictum non consectetur a \
+     erat nam.In nisl nisi scelerisque eu ultrices vitae auctor eu augue.\
+     Quis viverra nibh cras pulvinar mattis nunc sed.Ultricies lacus sed \
+     turpis tincidunt id aliquet risus.Enim nulla aliquet porttitor lacus \
+     luctus accumsan tortor posuere ac.Accumsan in nisl nisi scelerisque \
+     eu.Ultrices dui sapien eget mi proin sed libero enim sed.Lacus viverra\
+     vitae congue eu consequat ac.Consectetur lorem donec massa sapien\
+     faucibus.Aliquet bibendum enim facilisis gravida neque convallis \
+     a cras semper.Condimentum id venenatis a condimentum vitae sapien.\n \
+     Consequat semper viverra nam libero justo.Augue interdum velit \
+     euismod in pellentesque massa placerat.Ut morbi tincidunt augue \
+     interdum velit.Lacinia quis vel eros donec ac.Molestie at elementu\
+     m eu facilisis sed odio.Arcu dui vivamus arcu felis.Purus viverra \
+     accumsan in nisl nisi scelerisque eu ultrices.Vel orci porta non p\
+     ulvinar neque.Id diam vel quam elementum pulvinar etiam non quam.V\
+     olutpat consequat mauris nunc congue nisi vitae suscipit tellus.";
+
+        var bottles = "99 bottles of beer on the wall, 99 bottles of beer.\
+    Take one down, pass it around, 98 bottles of beer on the wall...\
+    98 bottles of beer on the wall, 98 bottles of beer.\
+    Take one down, pass it around, 97 bottles of beer on the wall...\
+    97 bottles of beer on the wall, 97 bottles of beer.\
+    Take one down, pass it around, 96 bottles of beer on the wall...\
+    96 bottles of beer on the wall, 96 bottles of beer.\
+    Take one down, pass it around, 95 bottles of beer on the wall...";
+
+        var thing = "this is the third thing";
+    </script>
+</body>
+
+</html>
